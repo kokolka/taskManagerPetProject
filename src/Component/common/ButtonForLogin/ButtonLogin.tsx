@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
-const ButtonLogin: React.FC<any> = (props) => {
+type ButtonLoginType = {
+    children: never[] | undefined | string | ReactElement<any, any>,
+    login: any
+}
+
+const ButtonLogin: React.FC<ButtonLoginType> = (props) => {
     return (
         <div onClick={props.login}>
-            G
+            {props.children}
         </div>
     );
 }
