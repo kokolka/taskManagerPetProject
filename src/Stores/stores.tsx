@@ -4,6 +4,7 @@ import { Tasks, TasksClassType } from './tasks';
 interface StoresClassType {
     tasks: TasksClassType
 }
+//issues - нужно попробывать записать значение в tasks
 
 class Stores implements StoresClassType{
     tasks: TasksClassType;
